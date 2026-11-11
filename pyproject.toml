@@ -1,0 +1,16 @@
+[project]
+name = "scriptlab"
+version = "0.8.1"
+description = "Source-preserving script parser with independent raw-HTML verification"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+scriptlab = "scriptlab.cli:run"
+
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["scriptlab*"]
